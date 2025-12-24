@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Scoreboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="home">
+            <p class="title">Home</p>
+            <p class ="score" id="hDisplay">0</p>
+            <div class="adders">
+                <button id="hFirstBtn">+1</button>
+                <button id="hSecondBtn">+2</button>
+                <button id="hThirdBtn">+3</button>
+                <button id="hResetBtn" class="reset"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+            </div>
+        </div>
+        <div class="guest">
+            <p class="title">Guest</p>
+            <p class="score" id="gDisplay">0</p>
+            <div class="adders">
+                <button id="gFirstBtn">+1</button>
+                <button id="gSecondBtn">+2</button>
+                <button id="gThirdBtn">+3</button>
+                <button id="gResetBtn" class="reset"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/2df5e1a210.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+:root {
+    --score-font: "Orbitron", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 270px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #051853;
+    border-radius: 6px;
+    box-shadow: 0px 10px 20px #bcbcbc;
+    border: 5px solid #d2d2d2;
+}
+
+.container .home,
+.guest {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .home .title {
+    color: #fff;
+    font-family: var(--score-font);
+    font-size: 25px;
+}
+
+.container .guest .title {
+    color: #fff;
+    font-family: var(--score-font);
+    font-size: 25px;
+}
+
+.container .home .score {
+        text-align: center;
+    width: 90px;
+    margin: 10px;
+    padding :30px;
+    background-color: #000;
+    color: red;
+    font-family: var(--score-font);
+    font-size: 40px;
+    border-radius: 6px;
+}
+
+.container .guest .score {
+    text-align: center;
+    width: 90px;
+    margin: 10px;
+    padding :30px;
+    background-color: #000;
+    color: red;
+    font-family: var(--score-font);
+    font-size: 40px;
+    border-radius: 6px;
+}
+
+.container .adders button {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #fff;
+    font-family: var(--score-font);
+    margin: 3px;
+    cursor: pointer;
+
+    &:active {
+        background-color: #fff;
+        color: #051853;
+    }
+}
+
+.container button.reset {
+    background-color: #ff0000;
+
+    &:active {
+        background-color: #c70101;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 490px){
+    .container {
+        width: 85%;
+    }
+    .container .home .title {
+        font-size: 15px;
+    }
+    .container .guest .title {
+        font-size: 15px;
+    }
+    .container .home .score {
+        width: 50px;
+        font-size: 30px;
+    }
+        .container .guest .score {
+        width: 50px;
+        font-size: 30px;
+    }
+    .container .adders button {
+        margin: 3px;
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+    }
+}
